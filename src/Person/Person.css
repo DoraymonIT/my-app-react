@@ -1,0 +1,9 @@
+.my-button {
+  background-color: salmon;
+  padding: 10px;
+  color: white;
+  border: 2px solid black;
+  font-weight: 800;
+  border-radius: 10px;
+  margin-left: 10px;
+}
