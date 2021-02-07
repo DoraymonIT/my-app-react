@@ -6,8 +6,17 @@
   height: 40vmin;
   pointer-events: none;
 }
-.my-h1{
+.my-h1 {
   color: rgb(207, 101, 101);
+  text-align: center;
+}
+.my-button {
+  text-align: center;
+  background-color: brown;
+  border: 2px solid black;
+}
+button:focus {
+  outline: 0 none;
 }
 @media (prefers-reduced-motion: no-preference) {
   .App-logo {
