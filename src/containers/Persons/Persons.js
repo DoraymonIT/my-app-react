@@ -14,9 +14,21 @@ class Persons extends Component {
     persons.splice(personIndex, 1);
     this.setState({ persons: persons });
   };
+  addPersonHandler = (person) => {
+    const persons = [...this.state.persons];
+    persons.push(person);
+    this.setState({ persons: persons });
+  };
   render() {
     return this.state.persons.map((p) => {
-      return <Person name={p.name} age={p.age} key={p.id} click={this.deletePersonHandler} />;
+      return (
+        <Person
+          name={p.name}
+          age={p.age}
+          key={p.id}
+          click={this.deletePersonHandler}
+        />
+      );
     });
   }
 }
